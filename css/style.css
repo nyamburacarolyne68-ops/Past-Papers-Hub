@@ -1,0 +1,279 @@
+/* ==============================
+   PAST PAPERS HUB - MAIN STYLE
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+.navbar {
+    background: #0f172a;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* ==============================
+   MAIN CONTAINER
+   ============================== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+/* ==============================
+   HEADINGS
+   ============================== */
+
+h1 {
+    text-align: center;
+    color: #0f172a;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #1e3a8a;
+}
+
+.page-description {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+/* ==============================
+   SEARCH AREA
+   ============================== */
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.search-area input {
+    width: 60%;
+    padding: 14px 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    background: white;
+}
+
+.search-area input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   PAPER CARDS
+   ============================== */
+
+#papersContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.paper-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.paper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.paper-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.paper-card p {
+    margin-bottom: 8px;
+    color: #475569;
+}
+
+.paper-card button {
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* ==============================
+   UPLOAD FORM
+   ============================== */
+
+#uploadForm {
+    max-width: 650px;
+    margin: 30px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+#uploadForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+#uploadForm input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+#uploadForm input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+#uploadForm button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    font-size: 16px;
+}
+
+#uploadMessage {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+.footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+.footer p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+   ============================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .search-area {
+        flex-direction: column;
+    }
+
+    .search-area input {
+        width: 100%;
+    }
+
+    .search-area button {
+        width: 100%;
+    }
+
+    #uploadForm {
+        padding: 25px 20px;
+    }
+}
