@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Paper | Past Papers Hub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Past Papers Hub
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="test.html">Past Papers</a>
+            </li>
+
+            <li>
+                <a href="upload.html">Upload Paper</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Upload Section -->
+
+    <main class="container">
+
+        <h1> Upload a Past Paper</h1>
+
+        <p class="page-description">
+            Share a past examination paper with other students.
+            Please provide the details below.
+        </p>
+
+
+        <form id="uploadForm">
+
+            <label for="name">
+                Your Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="subject">
+                Subject
+            </label>
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="e.g. Data Communication"
+                required
+            >
+
+
+            <label for="institution">
+                Institution
+            </label>
+
+            <input
+                type="text"
+                id="institution"
+                placeholder="e.g. Michuki National Polytechnic"
+                required
+            >
+
+
+            <label for="year">
+                Year
+            </label>
+
+            <input
+                type="number"
+                id="year"
+                placeholder="e.g. 2026"
+                required
+            >
+
+
+            <label for="examType">
+                Exam Type
+            </label>
+
+            <input
+                type="text"
+                id="examType"
+                placeholder="e.g. CAT, Midterm or Final Exam"
+            >
+
+
+            <label for="paperFile">
+                Select Your Paper
+            </label>
+
+            <input
+                type="file"
+                id="paperFile"
+                accept="image/*,.pdf"
+                required
+            >
+
+
+            <button type="submit">
+                 Upload Paper
+            </button>
+
+        </form>
+
+
+        <p id="uploadMessage"></p>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Past Papers Hub. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Supabase -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/upload.js"></script>
+
+</body>
+
+</html>

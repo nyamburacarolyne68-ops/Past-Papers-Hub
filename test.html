@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Past Papers</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+    <div class="logo">
+         Past Papers Hub
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="test.html">Past Papers</a></li>
+        <li><a href="upload.html">Upload Paper</a></li>
+    </ul>
+
+</nav>
+
+    <div class="container">
+
+    <h1> Past Papers</h1>
+
+    <p class="page-description">
+        Search and access past examination papers from different institutions.
+    </p>
+
+    <div class="search-area">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by subject, institution or year..."
+        >
+
+        <button id="searchButton">
+            Search
+        </button>
+
+    </div>
+
+    <section id="papersContainer">
+        <p>Loading past papers...</p>
+    </section>
+
+</div>
+<footer class="footer">
+
+    <p>© 2026 Past Papers Hub. All rights reserved.</p>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/papers.js"></script>
+
+</body>
+
+</html>
